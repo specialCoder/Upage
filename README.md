@@ -1,2 +1,2 @@
 # Upage
-desig yourself page
+design yourself page
