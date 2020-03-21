@@ -1,58 +1,57 @@
 {
-  "name": "react-material-dashboard",
-  "author": "DeviasIO",
-  "email": "contact@devias.io",
-  "licence": "MIT",
-  "version": "0.3.0",
-  "private": false,
+  "name": "webpack-init-project",
+  "version": "1.0.1",
+  "description": "learning webpack completely",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "watch": "webpack --watch",
+    "start": "NODE_ENV=development webpack-dev-server --config webpack.dev.js --open",
+    "lint": "eslint --ext .js,.jsx --fix",
+    "build": "NODE_ENV=production webpack --color --processs --config webpack.prod.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:specialCoder/use-webpack.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "specialcoder",
+  "license": "ISC",
   "dependencies": {
-    "@material-ui/core": "^4.2.1",
-    "@material-ui/icons": "^4.2.1",
-    "@material-ui/styles": "^4.2.1",
-    "chart.js": "^2.8.0",
-    "clsx": "^1.0.4",
-    "history": "^4.9.0",
-    "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-chartjs-2": "^2.7.6",
-    "react-dom": "^16.8.6",
-    "react-perfect-scrollbar": "^1.5.3",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.0.1",
-    "recompose": "^0.30.0",
-    "underscore": "^1.9.1",
-    "uuid": "^3.3.2",
-    "validate.js": "^0.13.1"
+    "@babel/polyfill": "^7.7.0",
+    "less": "^3.10.3",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2"
   },
+  "sideEffects": false,
   "devDependencies": {
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.12.4",
-    "prettier": "^1.17.1",
-    "prettier-eslint": "^8.8.2",
-    "prettier-eslint-cli": "^4.7.1",
-    "typescript": "^3.5.1"
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "autoprefix": "^1.0.1",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.5",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.7.1",
+    "eslint-plugin-react": "^7.16.0",
+    "file-loader": "^4.3.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "postcss-loader": "^2.1.6",
+    "raw-loader": "^3.1.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
   }
 }
