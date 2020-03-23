@@ -1,0 +1,32 @@
+{
+     "exclude": [
+         "node_modules",
+         "**/*.spec.ts"
+     ],
+     "compilerOptions": {
+         "baseUrl": ".",
+         "paths": { 
+            //  "jquery": ["node_modules/jquery/dist/jquery"] ,
+            "components":["./src/components/"],
+            "utils":["./src/utils/"],
+         },
+         "module": "commonjs",
+         "target":"ES6",
+         "jsx": "react",
+         "allowJs": true,
+         "lib":[
+            "dom",
+        ],
+         "noImplicitAny": false,
+         "removeComments": true,
+         "preserveConstEnums": true,
+         "sourceMap": true,
+         "types": [],
+         "noResolve":true ,
+        //  "strictNullChecks": true,
+        //  "strictBindCallApply":true,
+         "skipLibCheck":true, 
+         "experimentalDecorators":true,
+         "esModuleInterop":true,
+     }
+ }
