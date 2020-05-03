@@ -27,10 +27,6 @@ module.exports = {
   module:{
     rules:[
       {
-        test:/\.tsx?$/,
-        loader:'ts-loader'
-      },
-      {
         test: /\.jsx?$/,
         include:path.resolve(__dirname,"./src"),
         use: {
@@ -74,7 +70,6 @@ module.exports = {
       }],
   },
   resolve:{
-    extensions:['.ts','.tsx','.js', '.jsx', '.json'],
     alias:{
       "components":path.resolve(__dirname,"src/components/"),
       "utils":path.resolve(__dirname,"src/utils/"),

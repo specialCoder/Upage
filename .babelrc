@@ -1,0 +1,23 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      // Disable polyfill transforms
+      "useBuiltIns": "usage",
+      // Do not transform modules to CJS
+      "modules":false
+    }],
+    ["@babel/react"]
+],
+  "plugins":[
+       ["@babel/plugin-transform-runtime", {
+        "absoluteRuntime": false,
+        "helpers": true,
+        "regenerator": true,
+        "useESModules": false
+       }],
+       ["@babel/plugin-proposal-decorators", { 
+         "legacy": true 
+         }],
+        ["@babel/plugin-proposal-class-properties"]
+    ]
+}

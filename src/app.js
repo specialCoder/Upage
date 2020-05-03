@@ -10,12 +10,12 @@ import Home from "./pages/Home/index.jsx";
 
 const App = ()=>{
   return (
-  <Router basename="">
-    <Switch>
-      <Route path='/' component={Home}/>
-      <Route component={NotFound}/>
-    </Switch>
-  </Router>);
-}
+    <Router>
+      <Switch>
+        <Route path='/' component={Home}/>
+        <Route component={NotFound}/>
+      </Switch>
+    </Router>);
+};
 
 export default ReactDOM.render(<App/>,window.document.getElementById("app"));
