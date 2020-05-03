@@ -1,5 +1,5 @@
-import React,{PureComponent} from "react";
-import "./style.less";
+import React,{PureComponent} from 'react';
+import './style.less';
 
 class NotFound extends PureComponent{
   constructor(props){

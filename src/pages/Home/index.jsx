@@ -1,21 +1,16 @@
-import React,{PureComponent} from "react";
-import "./style.less";
+import React from 'react';
+import Layout from '../../components/Layout/index.jsx';
+import Content from '../../components/Layout/Content.jsx';
+import './style.less';
 
-class Home extends PureComponent{
-  
-  state={
-    name:"namexxx"
-  }
+const Home  = ()=>{
 
-  handleClick=()=>{
-    console.log("onclick this.state.name-------->",this.state.name);
-  }
-
-  render(){
-    return <div>
-      <h1 onClick={this.handleClick}>Home</h1>
-    </div>;
-  }
-}
+  return <div>
+    <Layout/>
+    <Content>
+      xxx
+    </Content>
+  </div>;
+};
 
 export default Home;
