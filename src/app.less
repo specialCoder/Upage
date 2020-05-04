@@ -1,0 +1,16 @@
+@primary-color:#1976d2;
+@primary-font-size:14px;
+
+:root{
+  --primary-font-size:@primary-font-size;
+  --primary-color:@primary-color;
+}
+
+body{
+  font-size:14px;
+  margin:0;
+  .MuiAppBar-colorPrimary{
+    background-color:@primary-color;
+  }
+  background-color:rgba(0, 0, 0, 0.13);
+}
