@@ -1,23 +1,23 @@
-const path = require("path");
+const path = require('path');
 // const webpack = require('webpack');
-const merge = require("webpack-merge");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const merge = require('webpack-merge');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
-const common = require("./webpack.common.js");
+const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
-  mode:"development",
+  mode:'development',
   plugins:[
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "title", // 指定html文件的title标签内容 ????
-      template:path.resolve(__dirname,"static/html/index.dev.html"), // 指定要使用的模版
+      title: 'title', // 指定html文件的title标签内容 ????
+      template:path.resolve(__dirname,'static/html/index.dev.html'), // 指定要使用的模版
     }),
   ],
-  devtool: "inline-source-map",
+  devtool: 'inline-source-map',
   devServer:{
-    contentBase: "./dist",
+    contentBase: './dist',
     compress:true,
     proxy:{
     },

@@ -7,7 +7,7 @@ const Content = (props)=> {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="md">
+      <Container maxWidth="md" className="list-content">
         <Typography component="div" style={{ backgroundColor: '#fff', height: '100vh' }}>
           {props.children}
         </Typography>
